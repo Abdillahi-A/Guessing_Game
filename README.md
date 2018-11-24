@@ -1,5 +1,5 @@
 # Guessing_Game
-simple guessing game
+I'm thinking of a random integer between 1 and 20. What number am I thinking of>
 
-TO DO:
-account for user not inputting appropriate value e.g. entering a string instead of a number
+Change log:
+Added a Try and Except block to account for ValueErrors e.g. if a user inputs a string instead of an integer.
