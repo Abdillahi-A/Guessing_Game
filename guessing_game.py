@@ -2,26 +2,27 @@ import random
 
 name = input("Hello, what is your name ? ")
 
-print(f"Well, {name} I'm thinking of a number between 1 and 20." )
+print(f"Well, {name} I'm thinking of a random integer between 1 and 20." )
 
 play = 'yes'
 
 while play.lower()[0] == 'y':
 
     secretnumber = random.randint(1,20)
-    
     guess = 0
-    
     guess_count = 0
       
     while guess_count <5 and guess != secretnumber:
-        guess = int(input("Take a guess "))
-        guess_count += 1
-        if guess < secretnumber:
-            print("Your guess is too low. ")
-        elif guess > secretnumber:
-            print("Your guess is too high.")
-                      
+        try:
+            guess = int(input("Take a guess "))
+            guess_count += 1
+            if guess < secretnumber:
+                print("Your guess is too low. ")
+            elif guess > secretnumber:
+                print("Your guess is too high.")
+        except ValueError:
+            print("Oops!  That was no valid number.  Try again...")
+        
     if guess != secretnumber:   
          print(f"Sorry you are out of guesses. The number I was thinking of was {secretnumber}.")
     else:
