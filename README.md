@@ -1,10 +1,10 @@
 # Guessing Game
 
-##What does it do?
+## What does it do?
 
 A simple guessing game. "I'm thinking of a random integer between 1 and 20. What number am I thinking of?"
 
-##NB:
+## NB:
 Both .py files work exactly the same. I've just cleaned up the code on one of them to make it more readable by using functions.
 
 ## Change log:
