@@ -1,12 +1,8 @@
 import random
 
-name = input("Hello, what is your name ? ")
+print("I'm thinking of a random integer between 1 and 20." )
 
-print(f"Well, {name} I'm thinking of a random integer between 1 and 20." )
-
-play = 'yes'
-
-while play.lower()[0] == 'y':
+while True:
 
     secretnumber = random.randint(1,20)
     guess = 0
@@ -34,8 +30,8 @@ while play.lower()[0] == 'y':
         
     if play.lower()[0] == 'y':
         print("Cool! Let's play again!")
-        
-else:
-    print("That's too bad. Come back again later. Bye!")
+    else:
+        print("That's too bad. Come back again later. Bye!")
+        break
     
         
