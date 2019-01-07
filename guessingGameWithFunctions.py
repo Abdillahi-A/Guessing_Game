@@ -18,8 +18,7 @@ def checkIfGuessIsCorrect(guess,randomNumber, number_of_guesses):
             print(f"Congrats, you guessed correctly in {number_of_guesses} guesses! The number I was thinking of was {randomNumber}.")
         
         elif guess < randomNumber and number_of_guesses <5:
-            
-            guess = input("Your guess is too low. Try again.\n")
+            guess = input(f"Your guess is too low. You have {5 - number_of_guesses} guesses left Try again.\n")
             guess = checkUserInputtedNumber(guess)
             number_of_guesses += 1
             checkIfGuessIsCorrect(guess,randomNumber, number_of_guesses)
